@@ -1,30 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define ROWS 3
-#define COLS 3
-#include "addmatric.h"
-
+#define N_SORT 5
 
 int main(void)
-{
-	int A[ROWS][COLS]={
-	{2,3,0},
-	{8,9,1},
-	{7,0,5} };
+{	
+ 
+	int i;
+	int nums[N_SORTS];
 	
-	int B[ROWS][COLS]={
-	{1,0,0},
-	{0,1,0},
-	{0,0,1} };
+	printf("input %i numbers :", N_SORTS);
+	for(i=0; i<N_SORT; i++)
+	{
+		scanf("%d",&nums[i]);
+	 } 
 	
-	int C[ROWS][COLS];
 	
-	addMatrix(A,B,C);
-	printMatrix(C);
+	//sorintf function
+	//bubbleSort();
 	
-	return 0; 
+	printf("sorted numbers are : ");
+	for(i=0;i<N_SORT; i++)
+	{
+		printf("%d", nums[i]);
+	}
+	
+	 return 0;
 }
-
 
 
 
